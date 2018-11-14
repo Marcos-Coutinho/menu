@@ -1,0 +1,324 @@
+
+
+/*-------------------- início body --------------------*/
+body{
+	margin:0;
+	font-family:'Hero', 'Open Sans', sans-serif;
+	background: #fff;
+    background-size: cover;
+}
+body a:hover{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0; 
+
+}
+p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+p,ul li,ol li{
+	font-size:14px;
+}
+/*-------------------- fim body ----------------------*/
+.corpo_central{
+	background:#fff000;
+	margin-top:58px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.tab1{
+	float:left;
+	background:#;
+	padding:;
+	text-align:justify;
+	width:100%;
+	height:1000px;
+}
+/*-------------------- início menu -------------------*/
+.navbar {
+	background:#9cbdf2;  /*#ededed;      b50a06*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);*/
+	margin-bottom: 0;
+	border-top: 2px solid #f44336;
+	border-bottom:0px solid #000;
+	border-radius: 0px;
+	height:56px;
+	/*height:43px;*/
+}
+.noscroll {
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 30;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.mobile-side-menu {
+	width: 240px;
+	display: none;
+	background-color: #1b1b1b;
+	bottom: 0px;
+	z-index: 30;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	/* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+	margin-top:2px;
+}
+.mobile-side-menu i {
+	width:20px;
+}
+.mobile-side-menu ul {
+	float: none;
+	display: inline-block;
+	margin: auto;
+	width: 100%;
+	background-color: #1b1b1b;
+	border-radius: 0px;
+	list-style: none;
+}
+.mobile-side-menu ul > li {
+	text-align: left;
+}
+.mobile-side-menu ul > li > a {
+	text-transform: uppercase;
+    text-decoration: none;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    color: white;
+    padding:1em 1em;
+    font-weight: 600;
+    border-bottom: solid 1px #3f3f3f;
+	font-family: 'Open Sans', sans-serif;
+		outline:none;
+}
+.mobile-side-menu ul > li > a:hover,.mobile-side-menu ul > li.active > a{
+	background:#eff9de;
+	color:#212121;
+}
+.mobile-side-menu ul > li.active > a i,.mobile-side-menu ul > li > a:hover i{
+	color:#11931d;
+}
+.mobile-side-menu ul > li > a > i {
+    padding-right: 1em;
+    color: #ffff00;
+}
+.mobile-side-menu ul > li:first-child{
+	padding-top:1em;
+}
+.agile_container{
+	padding:.5em 2em;
+}
+.w3_agile_nav_main_left{
+	float:left;
+}
+.toggleMenu {
+    background:; 
+    border: 0px solid #1f5404;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+	width:30px;    /* menu 3 pontinho vertical= width:5px; */
+	padding:3px 0px 0px 0px;
+	text-decoration:none;
+}
+.toggleMenu a{
+	outline:none;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:14px;
+	text-decoration:none;
+	font-family: 'Open Sans', sans-serif;
+}
+.logo{
+	float:left;
+	margin-top:-5px;
+	margin-left:20px;
+	height:50px;
+	width:80px;
+	background:#ff0000;
+	text-align:right;
+}
+.w3_agile_nav_main_right{
+	float:right;
+	margin-top:-5px;
+	height:50px;
+	width:80px;
+	background:#ff0000;
+	text-align:right;
+}
+
+/*---------- RESPONSIVO ----------*/
+
+@media (max-width:736px){
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+	padding: 0.7em 1.5em;
+	}	
+}
+
+@media (max-width:667px){ 
+	.mobile-side-menu i {
+		width:20px;
+	}	
+	.mobile-side-menu ul > li > a {
+		font-size: 12px;
+	}
+}
+
+/* celulares
+5" , 5.5" - lindscap 
+*/
+@media (max-width: 640px){
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 1em 1em;
+	}
+	.mobile-side-menu ul > li:first-child {
+		padding-top: 1.3em;
+	}
+	.w3_agile_nav_main_right {
+		margin-top: -5px;
+	}
+}
+
+/* 
+tablet
+Samsung Galaxy Tab (600 x 1024), 
+BlackBerry PlayBook (600 x 1024),
+Amazon Kindle Fire (600 x 800) 
+*/
+@media (max-width: 600px){
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 1em 1em;
+	}	
+}
+
+@media (max-width: 568px){
+	.mobile-side-menu {
+		width: 240px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 2em;
+	}	
+}
+
+/* 
+celulares
+Sony Xperia Sola, U (480 x 854)
+3.5" Apple iPhone 3GS /4 (320 x 480 paisagem) 
+*/
+@media (max-width: 480px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+}
+
+/* celular 
+5.5" 
+Apple iPhone 6 Plus (414 x 736) 
+J7 Prime
+*/
+@media (max-width: 414px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+	.agile_container {
+		padding: .5em 1em;
+	}	
+}
+
+/* 
+celulares
+4.7" Google Nexus 4, LG Optimus G (384 x 640),
+4.2" BlackBerry Z10 (384 x 640)
+ */
+@media (max-width: 384px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+}
+
+/* 4.7" Apple iPhone 6 (375 x 667) */
+@media (max-width: 375px){
+	.mobile-side-menu {
+		width: 200px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+}
+
+/* 
+celulares
+BlackBerry Z30, HTC One, EVO LTE (360 x 640),
+Google Nexus 5, HTC Sensation, Evo 3D (360 x 640)
+5" 
+5.5"
+ */
+@media (max-width: 360px){
+	.mobile-side-menu {
+		width: 200px;
+		margin-top:-15px;
+	}
+	.mobile-side-menu i {
+		width:20px;
+	}
+	.mobile-side-menu ul > li > a {
+		padding: 0.5em 0.5em;
+	}
+	.w3_agile_nav_main_right {
+		margin-top: -5px;
+	}
+}
+/* -------------------- fim menu -------------------- */
