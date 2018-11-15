@@ -1,3 +1,43 @@
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #ededed; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+	position: fixed;
+	bottom:0;
+	left: 0;
+}
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 5px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: #828282; /* White text color */
+    font-size: 30px; /* Increased font size */
+	text-decoration:none;
+	outline:none;
+}
+
+.icon_nome {
+    width: 100%; /* Full-width */
+	/* overflow: auto;	 Estouro devido a flutuação */
+    font-size: 0.35em; /* Increased font size */
+	font-family:sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	outline:none;
+}
+
+.icon-bar a:hover {
+    background-color: ; /* Add a hover color */
+}
+
+
+#active {
+    background-color: #; /* Add an active/current color*/
+	color:#21522a;
+}
+
 
 
 /*-------------------- início body --------------------*/
@@ -14,6 +54,7 @@ h1,h2,h3,h4,h5,h6{
 	margin:0; 
 
 }
+
 p{
 	margin:0;
 }
